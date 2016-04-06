@@ -1,6 +1,6 @@
 {
   "name": "phantom-server",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Allows you to interact with PhantomJS from NodeJS by hosting it as a server",
   "main": "index.js",
   "scripts": {
