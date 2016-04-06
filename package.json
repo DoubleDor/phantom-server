@@ -15,6 +15,7 @@
   "author": "Mike Lyons <mdl0394@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "debug": "^2.2.0",
     "phantomjs-prebuilt": "^2.1.7",
     "q": "^1.4.1",
     "request": "^2.70.0",

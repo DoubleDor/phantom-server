@@ -17,7 +17,8 @@ var child_process = require( 'child_process' ),
     q = require( 'q' ),
     _ = require( 'underscore' );
 
-var request = require( 'request' );
+var request = require( 'request' ),
+    debug = require( 'debug' )( 'phantom-server' );
 
 var PHANTOM_SERVER_SCRIPT_NAME = 'phantom-server.js';
 var PHANTOM_SERVER_HOSTING_MESSAGE = 'hosting\n';
@@ -60,7 +61,7 @@ var PhantomServer = function() {
 
                 _this._phantom_child_process.stdout
                     .on( 'data', function( msg ) {
-                        console.log( msg.toString() );
+                        debug( msg.toString() );
                         if( msg.toString() === PHANTOM_SERVER_HOSTING_MESSAGE ) {
                             resolve( _this );
                         }
@@ -68,7 +69,7 @@ var PhantomServer = function() {
 
                 _this._phantom_child_process.stderr
                     .on( 'data', function( err ) {
-                        console.error( err.toString() );
+                        debug( err.toString() );
                         reject( err.toString() );
                     } );
             } );
@@ -85,7 +86,7 @@ var PhantomServer = function() {
     this._requestServer = function( data ) {
         var url = 'http://localhost:' + this._port;
 
-        console.log( 'sending', data );
+        debug( 'sending', data );
 
         return q
             .Promise( function( resolve, reject ) {
@@ -127,7 +128,7 @@ var PhantomServer = function() {
         return _this
             .start( options.phantomjs_path )
             .then( function() {
-                console.log( 'requesting' );
+                debug( 'requesting' );
                 return _this
                     ._requestServer( options );
             } );
