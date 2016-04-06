@@ -1,0 +1,17 @@
+{
+  "name": "phantom-server",
+  "version": "0.0.1",
+  "description": "Allows you to interact with PhantomJS from NodeJS by hosting it as a server",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/"
+  },
+  "keywords": [
+    "nodejs",
+    "js",
+    "phantomjs",
+    "phantom"
+  ],
+  "author": "Mike Lyons <mdl0394@gmail.com>",
+  "license": "MIT"
+}
