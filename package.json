@@ -16,13 +16,13 @@
   "license": "MIT",
   "dependencies": {
     "debug": "^2.2.0",
-    "mocha-runnable-generators": "^1.0.2",
     "q": "^1.4.1",
     "request": "^2.70.0",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "mocha-runnable-generators": "^1.0.2",
     "phantomjs-prebuilt": "^2.1.7"
   }
 }
