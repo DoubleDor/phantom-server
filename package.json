@@ -24,6 +24,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha-runnable-generators": "^1.0.2",
-    "phantomjs-prebuilt": "^2.1.7"
+    "phantomjs-prebuilt": "^2.1.7",
+    "publish": "^0.5.0"
   }
 }
