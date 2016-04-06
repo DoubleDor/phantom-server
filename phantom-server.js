@@ -1,4 +1,9 @@
 /**
+ * @file phantom-server.js
+ *
+ * @description The phantom file to be run. It setups a PhantomJS server that
+ *              will receive and run scripts as file paths.
+ *
  * Copyright (C) 2016 Dor Technologies
  *
  * This software may be modified and distributed under the terms

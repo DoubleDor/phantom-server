@@ -1,4 +1,11 @@
 /**
+ * @file index.js
+ *
+ * @description This file is the main entrypoint for the PhantomServer library.
+ *              In order to use the library you create and run an instance of
+ *              PhantomServer. Make sure you call .stop() when you are finished,
+ *              so you don't have rogue PhantomJS processes.
+ *
  * Copyright (C) 2016 Dor Technologies
  *
  * This software may be modified and distributed under the terms
@@ -18,7 +25,7 @@ var PHANTOM_SERVER_HOSTING_MESSAGE = 'hosting\n';
 var PHANTOM_SERVER_PORT = 4321;
 
 var PhantomServer = function() {
-    this._port = PHANTOM_SERVER_PORT; // Increment so that future servers have different ports
+    this._port = PHANTOM_SERVER_PORT;
     this._phantom_server_promise = null;
     this._phantom_child_process = null;
 
