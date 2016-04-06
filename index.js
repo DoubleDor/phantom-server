@@ -17,8 +17,7 @@ var child_process = require( 'child_process' ),
     q = require( 'q' ),
     _ = require( 'underscore' );
 
-var request = require( 'request' ),
-    juice = require( 'juice' );
+var request = require( 'request' );
 
 var PHANTOM_SERVER_SCRIPT_NAME = 'phantom-server.js';
 var PHANTOM_SERVER_HOSTING_MESSAGE = 'hosting\n';
