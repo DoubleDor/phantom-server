@@ -4,7 +4,8 @@
   "description": "Allows you to interact with PhantomJS from NodeJS by hosting it as a server",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/"
+    "test": "mocha tests/",
+    "deploy": "publish"
   },
   "keywords": [
     "nodejs",
